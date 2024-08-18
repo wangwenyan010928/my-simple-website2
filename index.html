@@ -3,70 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>数字梦幻乌托邦</title>
+    <title>公司网站</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">我的公司</div>
             <ul class="nav-links">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于我们</a></li>
-                <li><a href="products.html">产品</a></li>
-                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="#">网站首页</a></li>
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">产品展示</a></li>
+                <li><a href="#">新闻资讯</a></li>
+                <li><a href="#">联系我们</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <h1>数字梦幻乌托邦</h1>
-        <p>打造智能未来，共享绿色生活</p>
-        <a href="products.html" class="btn">了解更多</a>
-    </section>
-    <section class="about-us">
-        <h2>关于我们</h2>
-        <p>我们是一家致力于智能科技与环保事业的公司...</p>
-        <a href="about.html" class="btn">了解更多</a>
-    </section>
-    <section class="products">
-        <h2>我们的产品</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="assets/images/product1.jpg" alt="产品1">
-                <h3>产品1</h3>
-                <p>简短描述...</p>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="video-section">
+                <h3>企业视频</h3>
+                <!-- 可替换为视频嵌入代码 -->
+                <img src="assets/images/video-placeholder.jpg" alt="视频预览">
             </div>
-            <div class="product-item">
-                <img src="assets/images/product2.jpg" alt="产品2">
-                <h3>产品2</h3>
-                <p>简短描述...</p>
+            <div class="contact-info">
+                <h3>联系我们</h3>
+                <p>电话: 123-456-7890</p>
+                <p>邮箱: info@company.com</p>
+                <p>地址: 某某市某某区</p>
             </div>
-            <div class="product-item">
-                <img src="assets/images/product3.jpg" alt="产品3">
-                <h3>产品3</h3>
-                <p>简短描述...</p>
-            </div>
-        </div>
-    </section>
-    <section class="testimonials">
-        <h2>客户评价</h2>
-        <div class="testimonial-item">
-            <p>“这个产品非常出色！” - 客户A</p>
-        </div>
-        <div class="testimonial-item">
-            <p>“我们对服务非常满意！” - 客户B</p>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-info">
-            <p>© 2024 我的公司. 保留所有权利。</p>
-            <ul class="social-links">
-                <li><a href="#">微博</a></li>
-                <li><a href="#">微信</a></li>
-                <li><a href="#">LinkedIn</a></li>
+        </aside>
+
+        <main class="main-content">
+            <section class="company-info">
+                <h2>公司简介</h2>
+                <img src="assets/images/company-photo.jpg" alt="公司图片">
+                <p>我们是一家致力于绿色健康食品的企业，提供优质的产品和服务...</p>
+            </section>
+
+            <section class="news">
+                <h2>新闻资讯</h2>
+                <div class="news-item">
+                    <h3>公司荣获年度优秀企业奖</h3>
+                    <p>在今年的评选中，公司被评为年度优秀企业...</p>
+                    <a href="#">更多</a>
+                </div>
+                <div class="news-item">
+                    <h3>新产品发布会即将举行</h3>
+                    <p>公司将于下月举行新产品发布会，敬请期待...</p>
+                    <a href="#">更多</a>
+                </div>
+            </section>
+        </main>
+
+        <aside class="product-nav">
+            <h3>产品导航</h3>
+            <ul>
+                <li><a href="#">产品类别1</a></li>
+                <li><a href="#">产品类别2</a></li>
+                <li><a href="#">产品类别3</a></li>
+                <li><a href="#">产品类别4</a></li>
             </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div class="link-section">
+                <h4>代理区</h4>
+                <p>代理信息...</p>
+                <a href="#">了解更多</a>
+            </div>
+            <div class="link-section">
+                <h4>批发区</h4>
+                <p>批发信息...</p>
+                <a href="#">了解更多</a>
+            </div>
         </div>
+        <p>© 2024 公司名称. 保留所有权利. 地址: 某某市某某区, 电话: 123-456-7890</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
