@@ -22,8 +22,8 @@
         <aside class="sidebar">
             <div class="video-section">
                 <h3>企业视频</h3>
-                <!-- 可替换为视频嵌入代码 -->
-                <img src="assets/images/video-placeholder.jpg" alt="视频预览">
+                <!-- 实时更新的图片 -->
+                <img id="video-placeholder" src="assets/images/video-placeholder.jpg" alt="视频预览">
             </div>
             <div class="contact-info">
                 <h3>联系我们</h3>
@@ -81,5 +81,16 @@
         </div>
         <p>© 2024 公司名称. 保留所有权利. 地址: 某某市某某区, 电话: 123-456-7890</p>
     </footer>
+
+    <script>
+        function updateImage() {
+            var img = document.getElementById("video-placeholder");
+            var timestamp = new Date().getTime();
+            img.src = "assets/images/video-placeholder.jpg?t=" + timestamp;
+        }
+
+        // 每隔5秒更新一次图片
+        setInterval(updateImage, 5000);
+    </script>
 </body>
 </html>
