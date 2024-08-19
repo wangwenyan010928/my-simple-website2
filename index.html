@@ -23,7 +23,7 @@
             <div class="video-section">
                 <h3>企业视频</h3>
                 <!-- 实时更新的图片 -->
-                <img id="video-placeholder" src="assets/images/video-placeholder.jpg" alt="视频预览">
+                <img id="video-placeholder" src="http://192.168.2.52:8000/image/video-placeholder.jpg" alt="视频预览">
             </div>
             <div class="contact-info">
                 <h3>联系我们</h3>
@@ -36,7 +36,7 @@
         <main class="main-content">
             <section class="company-info">
                 <h2>公司简介</h2>
-                <img src="assets/images/company-photo.jpg" alt="公司图片">
+                <img src="http://192.168.2.52:8000/image/company-photo.jpg" alt="公司图片">
                 <p>我们是一家致力于绿色健康食品的企业，提供优质的产品和服务...</p>
             </section>
 
@@ -86,7 +86,7 @@
         function updateImage() {
             var img = document.getElementById("video-placeholder");
             var timestamp = new Date().getTime();
-            img.src = "assets/images/video-placeholder.jpg?t=" + timestamp;
+            img.src = "http://192.168.2.52:8000/image/video-placeholder.jpg?t=" + timestamp;
         }
 
         // 每隔5秒更新一次图片
