@@ -14,6 +14,7 @@
                 <li><a href="about.html">公司简介</a></li>
                 <li><a href="products.html">产品展示</a></li>
                 <li><a href="contact.html">联系我们</a></li>
+                <li id="user-info"></li>
             </ul>
         </nav>
     </header>
@@ -52,6 +53,28 @@
                     <a href="#">更多</a>
                 </div>
             </section>
+
+            <section class="auth-section">
+                <h2>会员专区</h2>
+                <div id="auth-forms">
+                    <div id="login-form">
+                        <h3>登录</h3>
+                        <input type="text" id="login-username" placeholder="用户名">
+                        <input type="password" id="login-password" placeholder="密码">
+                        <button onclick="login()">登录</button>
+                    </div>
+                    <div id="register-form">
+                        <h3>注册</h3>
+                        <input type="text" id="register-username" placeholder="用户名">
+                        <input type="password" id="register-password" placeholder="密码">
+                        <button onclick="register()">注册</button>
+                    </div>
+                </div>
+                <div id="member-content" style="display:none;">
+                    <h3>会员专属内容</h3>
+                    <p>这里是只有登录会员才能看到的内容。</p>
+                </div>
+            </section>
         </main>
 
         <aside class="product-nav">
@@ -81,30 +104,6 @@
         <p>© 2024 公司名称. 保留所有权利. 地址: <span id="footer-address">正在加载中...</span>, 电话: 123-456-7890</p>
     </footer>
 
-    <script>
-        function updateAddress() {
-            fetch('http://127.0.0.1:5000/get_address')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok ' + response.statusText);
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    document.getElementById('address').textContent = "地址: " + data.address;
-                    document.getElementById('footer-address').textContent = data.address;
-                })
-                .catch(error => {
-                    console.error('Error fetching address:', error);
-                    document.getElementById('address').textContent = "地址: 加载失败";
-                });
-        }
-
-        // 每5秒更新一次地址
-        setInterval(updateAddress, 5000);
-
-        // 页面加载时立即更新地址
-        updateAddress();
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

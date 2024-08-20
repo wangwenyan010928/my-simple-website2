@@ -2,99 +2,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #228B22;
-    color: white;
+    background-color: #333;
     padding: 10px 0;
+    color: #fff;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: center;
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav-links li {
-    margin: 0 20px;
+    display: inline;
 }
 
 .nav-links a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-}
-
-.nav-links a:hover {
-    background-color: #32CD32;
-    border-radius: 5px;
+    padding: 10px;
 }
 
 .container {
     display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px;
 }
 
-.sidebar, .product-nav {
-    width: 20%;
+.sidebar, .main-content, .product-nav {
     margin: 10px;
-    background-color: #e6f7e6;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
 
-.main-content {
-    width: 60%;
-    margin: 10px;
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.auth-section {
+    margin-top: 20px;
 }
 
-.video-section img, .company-info img {
-    width: 100%;
-    border-radius: 5px;
+.auth-section input {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    width: 200px;
 }
 
-.news-item {
-    margin-bottom: 20px;
+.auth-section button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
-.news-item h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #228B22;
-}
-
-.news-item p {
-    margin: 10px 0;
-}
-
-.news-item a {
-    text-decoration: none;
-    color: #006400;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-around;
-    background-color: #e6f7e6;
-    padding: 20px;
-}
-
-.footer-links .link-section {
-    width: 45%;
-}
-
-footer p {
-    text-align: center;
-    background-color: #228B22;
-    color: white;
-    padding: 10px 0;
-    margin: 0;
+.auth-section button:hover {
+    background-color: #555;
 }
