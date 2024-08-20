@@ -83,12 +83,14 @@
 
     <script>
         function updateAddress() {
-            fetch('/get_address')
+            // 这里你可以使用你自己的 API URL
+            fetch('https://your-api-endpoint.com/get_address')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('address').textContent = "地址: " + data.address;
                     document.getElementById('footer-address').textContent = data.address;
-                });
+                })
+                .catch(error => console.error('Error fetching address:', error));
         }
 
         // 每5秒更新一次地址
