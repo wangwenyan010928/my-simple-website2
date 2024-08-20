@@ -1,33 +1,75 @@
-/* Basic styling for the page */
 body {
     font-family: Arial, sans-serif;
-}
-
-header nav ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
-header nav ul li {
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
     display: inline;
-    margin-right: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
 }
 
 .container {
     display: flex;
+    margin: 20px;
 }
 
-.sidebar {
-    width: 20%;
-    padding: 15px;
+.sidebar, .main-content, .product-nav {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
 
-.main-content {
-    width: 60%;
-    padding: 15px;
+.auth-section {
+    margin-top: 20px;
 }
 
-.product-nav {
-    width: 20%;
-    padding: 15px;
+.auth-section input {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    width: 200px;
+}
+
+.auth-section button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-section button:hover {
+    background-color: #555;
+}
+
+/* 缩放 company-photo.jpg 图片 */
+.company-info img {
+    width: 66.66%; /* 缩放到原始大小的2/3 */
+    height: auto;  /* 保持纵横比 */
+}
+
+/* 缩放 video-placeholder.jpg 图片 */
+.video-section img {
+    width: 66.66%; /* 缩放到原始大小的2/3 */
+    height: auto;  /* 保持纵横比 */
 }
