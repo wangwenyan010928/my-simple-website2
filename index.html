@@ -83,14 +83,21 @@
 
     <script>
         function updateAddress() {
-            // 这里你可以使用你自己的 API URL
-            fetch('https://your-api-endpoint.com/get_address')
-                .then(response => response.json())
+            fetch('https://your-api-endpoint.com/get_address')  // 请确保使用了正确的 API URL
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     document.getElementById('address').textContent = "地址: " + data.address;
                     document.getElementById('footer-address').textContent = data.address;
                 })
-                .catch(error => console.error('Error fetching address:', error));
+                .catch(error => {
+                    console.error('Error fetching address:', error);
+                    document.getElementById('address').textContent = "地址: 加载失败";
+                });
         }
 
         // 每5秒更新一次地址
