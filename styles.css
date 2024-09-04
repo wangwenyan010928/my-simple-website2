@@ -94,23 +94,19 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Resizing images in the red box */
-.company-info img, .video-section img {
-    width: 90%; /* Resize to 90% of the container width */
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.company-info, .video-section {
+    width: 48%;
 }
 
 .auth-section, .contact-info, .product-nav {
     width: 30%;
 }
 
-/* Enlarging the content in the green box */
-.contact-info, .product-nav {
-    font-size: 1.2em; /* Increase font size */
-    width: 35%; /* Adjust width */
-    padding: 20px; /* Increase padding */
+.company-info img, .video-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 footer {
